@@ -17,11 +17,11 @@
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| archive | Archive Path | `string` | n/a | yes |
+| archive | Archive path | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| path | Extracted arhive path |
+| path | Extracted archive path |
 
