@@ -1,6 +1,6 @@
 module "example" {
   source        = "../"
-  archive       = "${path.module}/license.zip"
+  archive       = "${path.module}/license.tgz"
 }
 
 output "test" {

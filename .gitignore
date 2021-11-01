@@ -1,3 +1,4 @@
+/example/.terraform.lock.hcl
 /bin/archiver-binary
 archives/*
 !archives/.gitkeep
