@@ -3,7 +3,7 @@ export default {
   '*.md': ['prettier --write'],
   '*.{yml,yaml}': ['prettier --write'],
   '*.{tf,tfvars}': () => {
-    return ['pnpm run lint']
+    return ['pnpm run lint', 'pnpm run docs']
   }
 }
 
