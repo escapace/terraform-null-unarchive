@@ -1,4 +1,5 @@
 output "path" {
-  value       = data.null_data_source.archive.outputs.path
+  value       = abspath("${path.module}/archives/${local.hash}")
   description = "Extracted archive path"
+  depends_on  = [null_resource.archive]
 }

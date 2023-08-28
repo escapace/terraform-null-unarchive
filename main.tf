@@ -13,11 +13,3 @@ resource "null_resource" "archive" {
     command = "if [ ! -d \"${path.module}/archives/${local.hash}\" ]; then mkdir -p \"${path.module}/archives/${local.hash}\" && \"${local.archiver}\" unarchive \"${local.archive}\" \"${path.module}/archives/${local.hash}\"; fi"
   }
 }
-
-data "null_data_source" "archive" {
-  inputs = {
-    path = abspath("${path.module}/archives/${local.hash}")
-  }
-
-  depends_on = [null_resource.archive]
-}
