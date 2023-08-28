@@ -1,3 +1,5 @@
+pnpm-lock.yaml
+
 .tfsec/*
 !.tfsec/config.yml
 
