@@ -1,5 +1,5 @@
 module "example" {
-  source        = "../"
+  source        = "../.."
   archive       = "${path.module}/license.tgz"
 }
 
